@@ -1,0 +1,23 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+    max-width: 500px;
+    background: #fec107;
+    margin: auto;
+    font: 16px Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+section {
+    padding: 10px;
+    margin: 1px;
+}
+
+h1 {
+    margin-top: 30px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="eg">
+  <head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles2.css') }}">
+    <title>Stroke Predictions</title>
+  </head>
+  <body>  
+    <h1>Stroke Predictions</h1>
+
+    <p>
+      Please Answer the following questions to find out if you are likely to
+      have a stroke
+    </p>
+    <hr />
+    <section>
+      <form action="prediction" method="POST">
+
+        <section class="gender">
+          <label for="gender">Gender: </label>
+          <select name="gender" id="gender">
+            <option value="0">female</option>
+            <option value="1">male</option>
+          </select>
+        </section>
+
+        <section class="age">
+          <label for="age">Age: </label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            step="any"
+            required
+            min="0"
+          />
+        </section>
+
+        <section class="hypertension">
+          <label for="hypertension" >
+          </label>If you have Hypertension:
+          <select name="hypertension" id="hypertension">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </section>
+
+        <section class="heartdisease">
+          <label for="heartdisease">
+          </label>If you have Heart Disease:
+          <select name="heartdisease" id="heartdisease">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </section>
+
+        <section class="ever_married">
+          <label for="ever_married">Have you ever been married: </label>
+          <select name="ever_married" id="ever_married">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </section>
+
+        <section class="work_type">
+          <label for="work_type">Your current work type: </label>
+          <select name="work_type" id="work_type">
+            <option value="4">children</option>
+            <option value="2">Private</option>
+            <option value="1">Never_worked</option>
+            <option value="0">Govt_job</option>
+            <option value="3">Self-employed</option>
+          </select>
+        </section>
+
+        <section class="Residence_type">
+          <label for="Residence_type">Your Residence type: </label>
+          <select name="Residence_type" id="Residence_type">
+            <option value="0">Rural</option>
+            <option value="1">Urban</option>
+          </select>
+        </section>
+
+        <section class="avg_glucose_level">
+          <label for="avg_glucose_level"
+            >Your average glucose level:
+          </label>
+          <input
+            type="number"
+            name="avg_glucose_level"
+            id="avg_glucose_level"
+            step="any"
+            required
+            min="0"
+          />
+        </section>
+		<section class="bmi">
+			<label for="bmi"
+			  >Your average BMI:
+			</label>
+			<input
+			  type="number"
+			  name="bmi"
+			  id="bmi"
+			  step="any"
+			  required
+			  min="0"
+			/>
+		  </section>
+		  <section class="smoking_status">
+			<label for="smoking_status">Smoking Status: </label>
+			<select name="smoking_status" id="smoking_status">
+			  <option value="0">Unknown</option>
+        <option value="2">Never_smoked</option>
+			  <option value="1">Formerly_smoked</option>
+			  <option value="3">Smokes</option>
+			</select>
+		  </section>
+  
+
+        <section class="submission">
+          <input type="submit" value="Submit" />
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
